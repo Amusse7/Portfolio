@@ -4,183 +4,226 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
     <title>Abdulkadir Musse | Front-End Developer</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-<!-- Header Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="home" class="wrapper">
-            <h1>Hello, I'm Abdulkadir Musse.</h1>
-            <p>I'm A Front-End Developer.</p>
-        <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+    <!-- Header -->
+    <header id="header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div id="main-nav" class="top">
+                <div class="logo">
+                    <img src="images/logo.png"/>
+                </div>
+                <nav>
+                    <a href="#header">Home</a>
+                    <a href="#bio">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact-me">Contact</a>
+                </nav>
+            </div>
+            <div class="hero">
+                <div class="intro">
+                    <div class="avatar"></div>
+                    <h1 class="title">Hi, I&apos;m Abdul</h1>
+                    <p id="job-title" class="subtitle">Front-End Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow">
+            <a href="#bio"><i class="fas fa-chevron-down"></i></a>
         </div>
     </header>
 
-<!-- Main Section -->
-
+    <!-- Main -->
     <main>
-
-<!-- Bio Section BEGINS -->
         <section id="bio">
-            <div class="wrapper">
-                <h2>Bio</h2>
-                <div class="aboutContainer">
-                    <p>Hello! I'm Abdulkadir Musse and i am a Front-End Developer and a lover of sports. I'm looking to join a collaberative team to join and continue to grow my Front-End skills while helping to create beautiful and user-friendly web applications for everyone.</p>
-                    <br>
-                    <p>I come from an airline background, having previously worked in agile and fast pace enviornments four about 5 years.
-                    I love to travel and have gotten to see some of the most beautiful places on earth.
-                    </p>
-                    <br>
-                    <p>When i am not coding, you'd find me enjoying sports such as Soccer, Basketball and American Football or binging the latest Netflix series.</p>
+            <div class="inner">
+                <h2 class="title">Hello, I am Abdulkadir</h2>
+                <p class="subtitle">Front-End Developer from Toronto</p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh felis, rutrum id eleifend nec, viverra ac nunc. Fusce sit amet interdum metus, a interdum massa. Nullam gravida, elit sed mattis semper, libero leo convallis mi, et elementum magna tortor sed tortor. Aliquam hendrerit metus non enim fringilla, eu molestie ante bibendum.
+                </p>
+                
+                <div class="social-tray">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
                 </div>
             </div>
         </section>
-<!--Bio Section ENDS -->
-
-<!--Skills Section BEGINS -->
 
         <section id="skills">
-            <div class="wrapper">
-                <h2>My Skills</h2>
-                <div class="skillsContainer">
-                    <div class="individualSkill">
-                        <i class="fab fa-html5"></i>
-                        <span class="iconName">
-                            HTML5
-                        </span>
-                    </div>
-                    <div class="individualSkill">
-                        <i class="fab fa-css3-alt"></i>
-                        <span class="iconName">
-                            CSS3
-                        </span>
+            <div class="inner">
+                <h2 class="title">My Skills</h2>
+
+                <div class="container">
+                    <div class="skill-item">
+                        <div class="skill-label">
+                            <p>HTML5</p>
+                            <p><i class="fab fa-html5"></i></p>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-progress"></div></div>
                     </div>
 
-                    <div class="individualSkill">
-
-                        <span class="iconName">
-                            SASS
-                        </span>
+                    <div class="skill-item">
+                        <div class="skill-label">
+                            <p>CSS3 / SASS</p>
+                            <p><i class="fab fa-css3"></i></p>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-progress"></div></div>
                     </div>
 
-                    <div class="individualSkill">
-                        <i class="fab fa-js"></i>
-                        <span class="iconName">
-                            JAVASSCRIPT + ES6
-                        </span>
+                    <div class="skill-item">
+                        <div class="skill-label">
+                            <p>JS</p>
+                            <p><i class="fab fa-js"></i></p>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-progress"></div></div>
                     </div>
 
-                    <div class="individualSkill">
-                        <i class="fab fa-react"></i>
-                        <span class="iconName">
-                            REACT
-                        </span>
+                    <div class="skill-item">
+                        <div class="skill-label">
+                            <p>Responsive Design</p>
+                            <p><i class="fas fa-mobile"></i></p>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-progress"></div></div>
                     </div>
 
-                    <div class="individualSkill">
-                        <i class="fas fa-project-diagram"></i>
-                        <span class="iconName">
-                            PAIR PROGRAMMING
-                        </span>
+                    <div class="skill-item">
+                        <div class="skill-label">
+                            <p>ReactJS</p>
+                            <p><i class="fab fa-react"></i></p>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-progress"></div></div>
                     </div>
 
-                    <div class="individualSkill">
-                        <i class="fas fa-fire-alt"></i>
-                        <span class="iconName">
-                            FIREBASE
-                        </span>
+                    <div class="skill-item">
+                        <div class="skill-label">
+                            <p>Firebase</p>
+                            <p><i class="fas fa-fire"></i></p>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-progress"></div></div>
                     </div>
 
-                    <div class="individualSkill">
-                        <i class="fab fa-git-alt"></i>
-                        <span class="iconName">
-                            GIT
-                        </span>
+                    <div class="skill-item">
+                        <div class="skill-label">
+                            <p>Git</p>
+                            <p><i class="fas fa-code-branch"></i></p>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-progress"></div></div>
                     </div>
 
-                    <div class="individualSkill">
-                        <i class="fab fa-github"></i>
-                        <span class="iconName">
-                            GITHUB
-                        </span>
-                    </div>
-
-                    <div class="individualSkill">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span class="iconName">
-                            RESPONSIVE DESIGN
-                        </span>
-                    </div>
-
-                    <div class="individualSkill">
-                        <i class="fas fa-universal-access"></i>
-                        <span class="iconName">
-                            ACCESSIBILITY
-                        </span>
+                    <div class="skill-item">
+                        <div class="skill-label">
+                            <p>Github</p>
+                            <p><i class="fab fa-github"></i></p>
+                        </div>
+                        <div class="skill-bar"><div class="skill-bar-progress"></div></div>
                     </div>
                 </div>
             </div>
         </section>
 
-<!--Skills Section ENDS-->
-
-<!-- Portfolio Section BEGINS -->
-        <section id="portfolio">
-            <div class="wrapper">
-                <h2>Some Of The Things I've Made</h2>
-                <div class="portfolioContainer">
-
-                </div>
-            </div>
-        </section>
-<!--Portfolio Section ENDS -->
-
-<!-- Contact Section BEGINS -->
-        <section id="contact">
-            <div class="wrapper">
-                <h2>Contact</h2>
-                <div class="contactContainer">
-                    <div class="contactTextContainer">
-                        <p>You can conact me using the contact form or feel free to reach out to me directly at the email below!</p>
-                        <p><a href="mailto:amusse710@gmail.com" id="email">amusse710@gmail.com</a></p>
-                    <ul>
-                        <li><a href="https://github.com/Amusse7" target="_blank" title="Find me on GitHub"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/abdulkadir-musse/" target="_blank" title="Connect on LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://twitter.com/AbdulCodes" target="_blank" title="find me on Twitter friends!"><i class="fab fa-twitter"></i></a></li>
-                    </ul>
+        <section id="projects">
+            <div class="inner">
+                <h2 class="title">Projects</h2>
+                
+                <div class="container">
+                    <div class="project">
+                        <img class="project-image" src="images/projects/p1.png"/>
+                        <div class="project-info">
+                            <h4 class="project-name">Project One</h4>
+                            <div class="d-flex">
+                                <a class="btn" href="#"><span>View</span> <i class="fas fa-eye"></i></a>
+                                <a class="btn" href="#"><span>Github</span> <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <form action="https://formspree.io/mvobdppp" method="POST" data-aos="fade-down" data-aos-duration="1500">
-                        <label for="userName" id="nameLabel">Name</label>
-                        <input type="text" name="name" placeholder="Your name here" id="userName" required>
-                        <label for="userEmail" id="emailLabel">Email</label>
-                        <input type="email" name="_replyto" placeholder="Your email here" id="userEmail" required>
-                        <label for="userMessage" id="messageLabel">Message</label>
-                        <textarea name="userMessage" id="userMessage" cols="30" rows="4S" placeholder="Hi John, I heard you like netflix! Let's meet up and talk about our favourite series and web development!" required></textarea>
-                        <button aria-label="Submit" type="submit"  class="button">Send</button>
-                        <p class="formSubmitMessage">Thanks! Your message has been sent. </p>
-                    </form>
+
+                    <div class="project">
+                        <img class="project-image" src="images/projects/p2.png"/>
+                        <div class="project-info">
+                            <h4 class="project-name">Project Two</h4>
+                            <div class="d-flex">
+                                <a class="btn" href="#"><span>View</span> <i class="fas fa-eye"></i></a>
+                                <a class="btn" href="#"><span>Github</span> <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images/projects/p3.png"/>
+                        <div class="project-info">
+                            <h4 class="project-name">Project Three</h4>
+                            <div class="d-flex">
+                                <a class="btn" href="#"><span>View</span> <i class="fas fa-eye"></i></a>
+                                <a class="btn" href="#"><span>Github</span> <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img class="project-image" src="images/projects/p4.png"/>
+                        <div class="project-info">
+                            <h4 class="project-name">Project Four</h4>
+                            <div class="d-flex">
+                                <a class="btn" href="#"><span>View</span> <i class="fas fa-eye"></i></a>
+                                <a class="btn" href="#"><span>Github</span> <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-<!--Contact Section ENDS -->
+
+        <section id="contact-me">
+            <h2 class="title">Contact Me</h2>
+
+            <div class="contacts">
+                <div class="contact-item">
+                    <div><i class="fas fa-envelope"></i></div>
+                    <p>amusse710@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <p>Toronto, ON</p>
+                </div>
+                <div class="contact-item">
+                    <div><i class="fas fa-phone"></i></div>
+                    <p>+1 647-609-4517</p>
+                </div>
+            </div>
+
+            <form class="form">
+                <div class="two-col">
+                    <input type="text" placeholder="Name"/>
+                    <input type="text" placeholder="Email"/>
+                </div>
+                <textarea placeholder="Message...">
+
+                </textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
     </main>
 
-<!-- Footer Section BEGINS -->
-            <footer>
-                <p id="copyright">Designed And Developed By Copyright &copy; Abdulkadir Musse</p>
-            </footer>
-<!--Footer Section ENDS -->
+    <!-- Footer -->
+    <footer>
+        <div class="social-tray">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <p class="nm">&copy; 2021. Made by Abdul M.</p>
+    </footer>
 
-<script src="./App.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
