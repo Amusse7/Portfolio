@@ -396,3 +396,10 @@ footer > .social-tray {
         margin:20px 0;
     }
 }
+
+@media screen and (max-width:445px)
+{
+    header nav a {
+        font-size: 10px;
+    }
+}
