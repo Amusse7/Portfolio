@@ -145,9 +145,9 @@ header .intro > .avatar {
     background:white;
     border-radius:100% 100%;
     border:5px solid white;
-    background:url(./Assets/pp.png);
+    background:url(./Assets/Me.png);
     background-position: center;
-    background-size:90% auto;
+    background-size:100% auto;
 }
 
 header .intro .title {margin-top:20px;font-size:42px;margin-bottom: 5px;}
